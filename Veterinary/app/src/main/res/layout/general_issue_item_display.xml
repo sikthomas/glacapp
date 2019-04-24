@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/poster_detail"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/general_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@color/lightgray"
+                    app:civ_border_color="@color/colorPrimaryDark"
+                    app:civ_border_width="2dp"/>
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:paddingLeft="8dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_fullname_sent_issue_general"
+                    android:textSize="15dp"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_membertype_sent_issue_general"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/Green"
+                    android:textStyle="bold|italic"
+                    android:textColorHint="@color/dot_dark_screen1"
+                    android:layout_gravity="end"
+                    />
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:id="@+id/image_issue_sent_general"
+                android:src="@color/lightgray"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_isseu_display_genera"
+                android:paddingLeft="16dp"
+                android:background="@drawable/shape"
+                android:layout_marginTop="2dp"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

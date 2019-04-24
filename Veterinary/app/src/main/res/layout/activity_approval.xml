@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.veterinary.Account.Approval">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check if the request is from valid proffessionals before approval"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:text="Details"
+                android:background="@drawable/shape_background"
+                android:id="@+id/tv_Details"
+                android:layout_marginTop="15dp"
+                android:padding="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/call_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="16dp"
+                android:clickable="true"
+                android:src="@drawable/callicon"
+                android:layout_gravity="center"
+                app:backgroundTint="?attr/colorPrimaryDark"
+                app:elevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.923"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.977"
+                app:rippleColor="@color/Brown" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="2">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:theme="@style/PrimaryButton"
+                    android:text="Accept"
+                    android:textColor="@color/Black"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_accept"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:text="Decline"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/btn_decline"
+                    android:theme="@style/PrimaryButtonTwo"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

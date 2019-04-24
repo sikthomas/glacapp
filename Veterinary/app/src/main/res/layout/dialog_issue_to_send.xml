@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AlertDialogLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Tap bellow to pick an image (Optional)"
+                android:layout_marginTop="2dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@color/lightgray"
+                android:layout_marginTop="2dp"
+                android:id="@+id/image_issue_to_pick"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:id="@+id/edt_issue">
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Enter your issue..."
+                        android:id="@+id/edt_issue_main"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:background="@drawable/shape_edit"
+                        android:inputType="textMultiLine"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:id="@+id/btn_send_issue_dialog"
+                android:theme="@style/PrimaryButton"
+                android:textColorHint="@color/Black"
+                android:text="send"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v7.widget.AlertDialogLayout>

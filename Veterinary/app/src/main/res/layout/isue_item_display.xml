@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="2dp"
+                android:paddingLeft="2dp">
+
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_fullname_sent_issue"
+                    android:textColor="@color/grey"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/tv_membertype_sent_issue"
+                    android:textStyle="bold|italic"
+                    android:textColorHint="@color/dot_dark_screen1"
+                    android:layout_gravity="end"
+                    />
+
+
+
+            </LinearLayout>
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:id="@+id/image_issue_sent"
+                android:src="@color/lightgray"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_isseu_display"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_reply_display"
+                android:paddingLeft="16dp"
+                android:layout_marginTop="2dp"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_call_issue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@android:drawable/sym_action_call" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginTop="2dp"
+                android:weightSum="3">
+
+                <Button
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Reply"
+                    android:id="@+id/btn_reply"
+                    android:theme="@style/PrimaryFlatButton" />
+
+                <Button
+                    android:id="@+id/btn_done_with_issue"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="2"
+                    android:text="Done"
+                    android:textAllCaps="false"
+                    android:theme="@style/PrimaryButtonTwo" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

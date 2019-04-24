@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "807957758558",
+    "firebase_url": "https://exampl-87019.firebaseio.com",
+    "project_id": "exampl-87019",
+    "storage_bucket": "exampl-87019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807957758558:android:cb0f443ab90830e4",
+        "android_client_info": {
+          "package_name": "com.example.glac"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807957758558-dn6b94muagra9pf1td9cdqet5rhc8kbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGe1rXC-VCu4MbQ4hEJ9WYTUYxaIAN9uo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807957758558:android:eea1e46e15caafab",
+        "android_client_info": {
+          "package_name": "com.veterinary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807957758558-dn6b94muagra9pf1td9cdqet5rhc8kbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGe1rXC-VCu4MbQ4hEJ9WYTUYxaIAN9uo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

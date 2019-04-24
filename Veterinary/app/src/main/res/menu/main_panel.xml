@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_issues_vets"
+        android:orderInCategory="10"
+        android:title="My Requests"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_approved_vets"
+        android:orderInCategory="10"
+        android:title="Veterinarianss"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sendreply_vets"
+        android:orderInCategory="10"
+        android:title="Confirm Reply"
+        android:visible="false"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_request"
+        android:orderInCategory="10"
+        android:title="Vet Request"
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item
+    android:id="@+id/action_myaccount"
+    android:orderInCategory="10"
+    android:title="My Account"
+    app:showAsAction="never" />
+    <item
+        android:id="@+id/acction_share"
+        android:orderInCategory="10"
+        android:title="Share"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="10"
+        android:title="Help"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rate_us"
+        android:orderInCategory="10"
+        android:title="Rate Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="10"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>
